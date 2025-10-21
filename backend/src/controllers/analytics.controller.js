@@ -1,7 +1,6 @@
 import prisma from "../prisma.js";
 
 // ✅ Get fleet utilization analytics
-//
 export const getFleetUtilization = async (req, res) => {
   try {
     const fleetStats = await prisma.ship.groupBy({
